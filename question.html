@@ -1,0 +1,161 @@
+<html>
+ <body>
+  <htmlquestion xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2011-11-11/HTMLQuestion.xsd">
+   <htmlcontent>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <script src="https://assets.crowd.aws/crowd-html-elements.js">
+    </script>
+    <section class="container" id="SurveyLink">
+     <div class="row">
+      <div class="col-xs-12 col-md-12">
+       <div class="panel panel-primary">
+        <a class="panel-heading" href="javascript:void(0);" id="collapseTrigger">
+         <strong>
+          Game Link Instructions
+         </strong>
+        </a>
+        <div class="panel-body" id="instructionBody">
+         <p>
+          We are conducting a game about memory on different dataset in the link.
+         </p>
+         <p>
+          <strong>
+           Before the game
+          </strong>
+          - At the top side of page, you can change the dataset of the game. Please make sure that you won't be disturbed during 5 minutes.
+         </p>
+         <p>
+          <strong>
+           First login
+          </strong>
+          - You can press
+          <kbd>
+           N
+          </kbd>
+          to generate a random nickname, we will ask you a few questions about yourself for the first time (you can choose "I don't want to reply")
+         </p>
+         <p>
+          <strong>
+           In the game
+          </strong>
+          - Press
+          <kbd>
+           Space
+          </kbd>
+          to mark the images that are shown twice. (Details in the help menu in game.)
+         </p>
+         <p>
+          <strong>
+           After the game
+          </strong>
+          - Paste your nickname and enter your password to get the rewards.
+          <strong>
+           Please don't share your password with the others, otherwise, your account might be rejected!
+          </strong>
+         </p>
+         <p class="well well-sm">
+          <strong>
+           <mark>
+            Rewards
+           </mark>
+          </strong>
+          - At least one
+          <strong>
+           valid game
+          </strong>
+          will reward you $0.1, each 4
+          <strong>
+           valid games
+          </strong>
+          on 4 different dataset will reward you $0.4. There are up to 6 games available for each dataset ($2.5)
+         </p>
+         <p class="well well-sm">
+          <strong>
+           <mark>
+            Valid game
+           </mark>
+          </strong>
+          - We designed in-game metrics to evaluate whether you have actually concentrated on the game (valid game) or not (invalid game). Don't worry, it won't conduct invalid game because of your bad memory.
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="row" id="workContent">
+      <div class="col-xs-12 col-md-6 col-md-offset-3">
+       <table class="table table-condensed table-bordered">
+        <colgroup>
+         <col class="col-xs-4 col-md-4"/>
+         <col class="col-xs-8 col-md-8"/>
+        </colgroup>
+        <tbody>
+         <tr>
+          <td>
+           <label>
+            Game link:
+           </label>
+          </td>
+          <td>
+           <a href="http://memory-game.rd.center/">
+            http://memory-game.rd.center/
+           </a>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <crowd-form answer-format="flatten-objects">
+        <div class="form-group">
+         <label for="surveycode">
+          Nickname:
+         </label>
+         <crowd-input id="nickname" name="nickname" placeholder="" required="" type="text">
+         </crowd-input>
+        </div>
+        <div class="form-group">
+         <label for="password">
+          Password:
+         </label>
+         <crowd-input id="password" name="password" placeholder="" required="" type="password">
+         </crowd-input>
+        </div>
+       </crowd-form>
+      </div>
+     </div>
+    </section>
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet"/>
+    <!-- Open internal style sheet -->
+    <style type="text/css">
+     #collapseTrigger{
+  color:#fff;
+  display: block;
+  text-decoration: none;
+}
+#submitButton{
+  white-space: normal;
+}
+.image{
+  margin-bottom: 15px; 
+}
+/* CSS for breaking long words/urls */
+.dont-break-out {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+    </style>
+    <!-- Close internal style sheet -->
+    <!-- External JS references -->
+    <script crossorigin="anonymous" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" src="https://code.jquery.com/jquery-3.1.0.min.js">
+    </script>
+    <script crossorigin="anonymous" integrity="sha384-s1ITto93iSMDxlp/79qhWHi+LsIi9Gx6yL+cOKDuymvihkfol83TYbLbOw+W/wv4" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js">
+    </script>
+    <!-- Open internal javascript -->
+  </htmlquestion>
+ </body>
+</html>
